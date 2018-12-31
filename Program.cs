@@ -1,4 +1,5 @@
 ﻿using System;
+using Classwork.lessons;
 /* this Name space represents the file folder 
 where the class is in */
 namespace Classwork
@@ -23,8 +24,8 @@ namespace Classwork
             CellPhone mycellphone = new CellPhone();
             mycellphone.Screen = "Full HD";
             mycellphone.Battrey = "Lithium ion";
-           int val= mycellphone.PowerButton ;
-            if ( val== 1 )
+            int val = mycellphone.PowerButton;
+            if (val == 1)
             {
                 mycellphone.Poweroff();
             }
@@ -34,9 +35,17 @@ namespace Classwork
             }
             //  mycellphone.PowerOn ();
             //mycellphone.Poweroff ();
-            Console.WriteLine ( mycellphone.Screen);
-            Console.WriteLine ( mycellphone.Battrey);
+            Console.WriteLine(mycellphone.Screen);
+            Console.WriteLine(mycellphone.Battrey);
+            MyNumbericExamples();
         }
-
+        static void MyNumbericExamples()
+        {
+            NumbericTypes myTypes = new NumbericTypes();
+            myTypes.Getsometype();
+            int something = myTypes.ConvertFloatToInt(35.9F);
+            Console.WriteLine (something);
+            Console.WriteLine(myTypes.LongFromInt(5600) );
+        }
     }
 }
