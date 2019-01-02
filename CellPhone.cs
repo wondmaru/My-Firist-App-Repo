@@ -49,14 +49,16 @@ namespace Classwork
         }
         public void PowerOn()
         {
-            Console.WriteLine("Wellcome your cellphone is ready again.");
-            PowerButton = 1;
+            Console.WriteLine("Wellcome, your cellphone is ON.");
+           // PowerButton = 1;
+           // return PowerButton;
         }
 
         public void Poweroff()
         {
-            Console.WriteLine(" Your cellphone was on now it will close.");
-            PowerButton = 0;
+            Console.WriteLine(" Your cellphone is Closing Bye.");
+           // PowerButton = 0;
+            //return PowerButton;
         }
     }
 
