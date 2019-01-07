@@ -1,5 +1,6 @@
 ﻿using System;
-using Classwork.lessons;
+using Lessons;
+
 /* this Name space represents the file folder 
 where the class is in */
 namespace Classwork
@@ -24,7 +25,7 @@ namespace Classwork
             CellPhone mycellphone = new CellPhone();
             mycellphone.Screen = "Full HD";
             mycellphone.Battrey = "Lithium ion";
-            for (int val = 0; val == 0 || val == 1;val++)
+            for (int val = 0; val == 0 || val == 1; val++)
             {
                 if (val == 1)
                 {
@@ -34,15 +35,17 @@ namespace Classwork
                 else
                 {
                     mycellphone.PowerOn();
-                  // mycellphone.PowerButton++; 
+                    // mycellphone.PowerButton++; 
                 }
             }
             //  mycellphone.PowerOn ();
             //mycellphone.Poweroff ();
             Console.WriteLine(mycellphone.Screen);
             Console.WriteLine(mycellphone.Battrey);
-           // MyNumbericExamples();
-           OtherNumbericExamples();
+            // MyNumbericExamples();
+            OtherNumbericExamples();
+            MyStringExamples();
+            StatmentExamples();
         }
         static void MyNumbericExamples()
         {
@@ -57,12 +60,42 @@ namespace Classwork
             myTypes.SpecialValues();
             myTypes.ComparisonOperators();
             myTypes.OtherOperators();
+
         }
 
-static void OtherNumbericExamples()
-{
-    NumbericTypes myTypes= new NumbericTypes();
-    myTypes.OtherOperators();
-}
+        static void OtherNumbericExamples()
+        {
+            NumbericTypes myTypes = new NumbericTypes();
+            myTypes.OtherOperators();
+        }
+        static void MyStringExamples()
+        {
+            StringTypes myTypes = new StringTypes();
+            myTypes.SampleString();
+            myTypes.AddString();
+            string words = myTypes.StringBuilderExample("Hello", "C Sharp", "Class");
+
+            Console.WriteLine(words);
+            myTypes.CharTypeExample();
+            myTypes.EscapeExample();
+            myTypes.PlaceHolderExample();
+            myTypes.ArraySample();
+            myTypes.MyHouseArray();
+            myTypes.MultiArraySample();
+        }
+        static void StatmentExamples()
+        {
+            StatmentExamples myStatmentExample = new StatmentExamples();
+            myStatmentExample.SampleIf();
+            myStatmentExample.SampleIfChain();
+            myStatmentExample.SampleIfAnd();
+            myStatmentExample.SampleOr();
+            myStatmentExample.SampleConditional();
+            myStatmentExample.SampleSwitch(10);
+            myStatmentExample.SampleWhile();
+            myStatmentExample.SampleDoWhile();
+            
+        }
+
     }
 }
