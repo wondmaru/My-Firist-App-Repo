@@ -10,17 +10,17 @@ namespace Classwork
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            House myHouse = new House();
-            myHouse.PaintDoor = "Red";
-            myHouse.CloseDoor();
+           // Console.WriteLine("Hello World!");
+         //  House myHouse = new House();
+           // myHouse.PaintDoor = "Red";
+            //myHouse.CloseDoor();
 
-            Console.WriteLine(myHouse.PaintDoor);
+           // Console.WriteLine(myHouse.PaintDoor);
 
-            House mySecondHouse = new House();
-            mySecondHouse.PaintDoor = "green";
-            Console.WriteLine(mySecondHouse.PaintDoor);
-            Console.WriteLine(myHouse.PaintDoor);
+           // House mySecondHouse = new House();
+          //  mySecondHouse.PaintDoor = "green";
+          //  Console.WriteLine(mySecondHouse.PaintDoor);
+           // Console.WriteLine(myHouse.PaintDoor);
 
             CellPhone mycellphone = new CellPhone();
             mycellphone.Screen = "Full HD";
@@ -43,11 +43,12 @@ namespace Classwork
             Console.WriteLine(mycellphone.Screen);
             Console.WriteLine(mycellphone.Battrey);
             // MyNumbericExamples();
-            OtherNumbericExamples();
-            MyStringExamples();
-            StatmentExamples();
+         //   OtherNumbericExamples();
+          //  MyStringExamples();
+          //  StatmentExamples();
             BottlesSong();
-
+         //   HouseSample();
+          //  structSample();
         }
         static void MyNumbericExamples()
         {
@@ -70,6 +71,12 @@ namespace Classwork
             NumbericTypes myTypes = new NumbericTypes();
             myTypes.OtherOperators();
         }
+
+        static void structSample()
+        {
+            BookSample bookSample = new BookSample(4.99m, "Zombi Fallout", "Mark Tufo");
+            Console.WriteLine("The book " + bookSample.title + "by" + bookSample.author + "is $" + bookSample.price);
+        }
         static void MyStringExamples()
         {
             StringTypes myTypes = new StringTypes();
@@ -85,6 +92,18 @@ namespace Classwork
             myTypes.MyHouseArray();
             myTypes.MultiArraySample();
         }
+        static void HouseSample()
+        {
+            House myHouse = new House("concrete", "triple Pane");
+            Console.WriteLine(myHouse.PaintDoor);
+            Console.WriteLine(myHouse.Foundation);
+            myHouse.OpenDoor(true);
+        }
+       /*  static void BottelsOfBeerSample()
+        {
+            BottleOfBeer beer = new BottleOfBeer();
+            beer.BottleOfBeerSong(99, "bottle");
+        }*/
         static void StatmentExamples()
         {
             StatmentExamples myStatmentExample = new StatmentExamples();
@@ -98,16 +117,18 @@ namespace Classwork
             myStatmentExample.SampleDoWhile();
             myStatmentExample.SampleFor();
             myStatmentExample.SampleForEach();
-           string mystring = myStatmentExample.JumpStatmentExample("Sunday");
-           Console.WriteLine(mystring);
-           
+            string mystring = myStatmentExample.JumpStatmentExample("Sunday");
+            Console.WriteLine(mystring);
+            myStatmentExample.SampleDays(DaysOfWeek.Wed);
 
-    }
-      static void BottlesSong()
+
+        }
+        static void BottlesSong()
         {
             BottleOfBeer beer = new BottleOfBeer();
-            string song = beer.BottleOfBeerSong();
-            Console.WriteLine(song);
+           string song = beer.BottleOfBeerSong();
+           Console.WriteLine(song);
+           //beer.BottleOfBeerSong(99, "bottle");
         }
-        }
+    }
 }
