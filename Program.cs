@@ -46,6 +46,8 @@ namespace Classwork
             OtherNumbericExamples();
             MyStringExamples();
             StatmentExamples();
+            BottlesSong();
+
         }
         static void MyNumbericExamples()
         {
@@ -94,8 +96,18 @@ namespace Classwork
             myStatmentExample.SampleSwitch(10);
             myStatmentExample.SampleWhile();
             myStatmentExample.SampleDoWhile();
-            
-        }
+            myStatmentExample.SampleFor();
+            myStatmentExample.SampleForEach();
+           string mystring = myStatmentExample.JumpStatmentExample("Sunday");
+           Console.WriteLine(mystring);
+           
 
     }
+      static void BottlesSong()
+        {
+            BottleOfBeer beer = new BottleOfBeer();
+            string song = beer.BottleOfBeerSong();
+            Console.WriteLine(song);
+        }
+        }
 }
