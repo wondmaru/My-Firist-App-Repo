@@ -137,9 +137,10 @@ namespace Classwork
             QuizClass1 myQuizClass1 = new QuizClass1();
             Console.WriteLine("Please Enter Grade.");
            
-            string grade= myQuizClass1.GreadeAndDesciption(Console.ReadLine( ));
+            string grade= myQuizClass1.GreadeAndDesciption(Console.ReadLine( ).ToUpper());
            Console.WriteLine(grade);
            myQuizClass1.DivisibleByThree();
+           
 
         }
     }
