@@ -1,5 +1,6 @@
 ﻿using System;
 using Lessons;
+using Quiz;
 
 /* this Name space represents the file folder 
 where the class is in */
@@ -10,45 +11,46 @@ namespace Classwork
     {
         static void Main(string[] args)
         {
-           // Console.WriteLine("Hello World!");
-         //  House myHouse = new House();
-           // myHouse.PaintDoor = "Red";
+            // Console.WriteLine("Hello World!");
+            //  House myHouse = new House();
+            // myHouse.PaintDoor = "Red";
             //myHouse.CloseDoor();
 
-           // Console.WriteLine(myHouse.PaintDoor);
+            // Console.WriteLine(myHouse.PaintDoor);
 
-           // House mySecondHouse = new House();
-          //  mySecondHouse.PaintDoor = "green";
-          //  Console.WriteLine(mySecondHouse.PaintDoor);
-           // Console.WriteLine(myHouse.PaintDoor);
+            // House mySecondHouse = new House();
+            //  mySecondHouse.PaintDoor = "green";
+            //  Console.WriteLine(mySecondHouse.PaintDoor);
+            // Console.WriteLine(myHouse.PaintDoor);
 
-            CellPhone mycellphone = new CellPhone();
-            mycellphone.Screen = "Full HD";
-            mycellphone.Battrey = "Lithium ion";
-            for (int val = 0; val == 0 || val == 1; val++)
-            {
-                if (val == 1)
-                {
-                    mycellphone.Poweroff();
-                    //mycellphone.PowerButton++;
-                }
-                else
-                {
-                    mycellphone.PowerOn();
-                    // mycellphone.PowerButton++; 
-                }
-            }
+            /*  CellPhone mycellphone = new CellPhone();
+           //  mycellphone.Screen = "Full HD";
+           //  mycellphone.Battrey = "Lithium ion";
+             for (int val = 0; val == 0 || val == 1; val++)
+             {
+                 if (val == 1)
+                 {
+                     mycellphone.Poweroff();
+                     //mycellphone.PowerButton++;
+                 }
+                 else
+                 {
+                     mycellphone.PowerOn();
+                     // mycellphone.PowerButton++; 
+                 }
+             }*/
             //  mycellphone.PowerOn ();
             //mycellphone.Poweroff ();
-            Console.WriteLine(mycellphone.Screen);
-            Console.WriteLine(mycellphone.Battrey);
+            //  Console.WriteLine(mycellphone.Screen);
+            // Console.WriteLine(mycellphone.Battrey);
             // MyNumbericExamples();
-         //   OtherNumbericExamples();
-          //  MyStringExamples();
-          //  StatmentExamples();
-            BottlesSong();
-         //   HouseSample();
-          //  structSample();
+            //   OtherNumbericExamples();
+            //  MyStringExamples();
+            //  StatmentExamples();
+            //   BottlesSong();
+            //   HouseSample();
+            //  structSample();
+            QuizClass1();
         }
         static void MyNumbericExamples()
         {
@@ -99,11 +101,11 @@ namespace Classwork
             Console.WriteLine(myHouse.Foundation);
             myHouse.OpenDoor(true);
         }
-       /*  static void BottelsOfBeerSample()
-        {
-            BottleOfBeer beer = new BottleOfBeer();
-            beer.BottleOfBeerSong(99, "bottle");
-        }*/
+        /*  static void BottelsOfBeerSample()
+         {
+             BottleOfBeer beer = new BottleOfBeer();
+             beer.BottleOfBeerSong(99, "bottle");
+         }*/
         static void StatmentExamples()
         {
             StatmentExamples myStatmentExample = new StatmentExamples();
@@ -126,9 +128,19 @@ namespace Classwork
         static void BottlesSong()
         {
             BottleOfBeer beer = new BottleOfBeer();
-           string song = beer.BottleOfBeerSong();
-           Console.WriteLine(song);
-           //beer.BottleOfBeerSong(99, "bottle");
+            string song = beer.BottleOfBeerSong();
+            Console.WriteLine(song);
+            //beer.BottleOfBeerSong(99, "bottle");
+        }
+        static void QuizClass1()
+        {
+            QuizClass1 myQuizClass1 = new QuizClass1();
+            Console.WriteLine("Please Enter Grade.");
+           
+            string grade= myQuizClass1.GreadeAndDesciption(Console.ReadLine( ));
+           Console.WriteLine(grade);
+           myQuizClass1.DivisibleByThree();
+
         }
     }
 }
