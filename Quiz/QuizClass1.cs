@@ -7,7 +7,6 @@ namespace Quiz
         {
 
 
-
             switch (grade)
             {
                 case "A":

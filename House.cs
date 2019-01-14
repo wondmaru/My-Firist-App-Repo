@@ -40,11 +40,9 @@ namespace Classwork
         public House() { }
 
         public House(string Foundation, string Window)
+        :this (Foundation, Window, "shingles" ,"Green")
         {
-            this._foundation = Foundation;
-            this._window = Window;
-            this.PaintDoor = "Green";
-            this.Roof = "shingles";
+            
         }
 
         public House(string Foundation, string Window, string roof, string doorPaint)

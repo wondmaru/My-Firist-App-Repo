@@ -12,7 +12,8 @@ namespace Classwork
         static void Main(string[] args)
         {
             // Console.WriteLine("Hello World!");
-            //  House myHouse = new House();
+           // House myHouse = new House();
+            
             // myHouse.PaintDoor = "Red";
             //myHouse.CloseDoor();
 
@@ -50,7 +51,9 @@ namespace Classwork
             //   BottlesSong();
             //   HouseSample();
             //  structSample();
-            QuizClass1();
+           // QuizClass1();
+           FruitSample();
+
         }
         static void MyNumbericExamples()
         {
@@ -136,12 +139,23 @@ namespace Classwork
         {
             QuizClass1 myQuizClass1 = new QuizClass1();
             Console.WriteLine("Please Enter Grade.");
-           
-            string grade= myQuizClass1.GreadeAndDesciption(Console.ReadLine( ).ToUpper());
-           Console.WriteLine(grade);
-           myQuizClass1.DivisibleByThree();
-           
+
+            string grade = myQuizClass1.GreadeAndDesciption(Console.ReadLine().ToUpper());
+            Console.WriteLine(grade);
+            myQuizClass1.DivisibleByThree();
+
 
         }
+        static void FruitSample()
+        {
+            Fruit myFruit = new Fruit();
+            myFruit.EatFruit();
+            Apple myApple= new Apple();
+            myApple.EatFruit();
+            RanchStyle ranch= new RanchStyle("Stone","Triple Pane" ,"composite" , "Blue");
+            ranch.OpenDoor();
+            Console.WriteLine(ranch.Roof);
+            Console.WriteLine(ranch.PaintDoor);
+        } 
     }
 }
