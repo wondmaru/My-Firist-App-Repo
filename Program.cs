@@ -12,8 +12,8 @@ namespace Classwork
         static void Main(string[] args)
         {
             // Console.WriteLine("Hello World!");
-           // House myHouse = new House();
-            
+            // House myHouse = new House();
+
             // myHouse.PaintDoor = "Red";
             //myHouse.CloseDoor();
 
@@ -51,9 +51,9 @@ namespace Classwork
             //   BottlesSong();
             //   HouseSample();
             //  structSample();
-           // QuizClass1();
-           FruitSample();
-
+            // QuizClass1();
+            // FruitSample();
+            Lesson11();
         }
         static void MyNumbericExamples()
         {
@@ -150,12 +150,42 @@ namespace Classwork
         {
             Fruit myFruit = new Fruit();
             myFruit.EatFruit();
-            Apple myApple= new Apple();
+            Apple myApple = new Apple();
             myApple.EatFruit();
-            RanchStyle ranch= new RanchStyle("Stone","Triple Pane" ,"composite" , "Blue");
+            RanchStyle ranch = new RanchStyle("Stone", "Triple Pane", "composite", "Blue");
             ranch.OpenDoor();
             Console.WriteLine(ranch.Roof);
             Console.WriteLine(ranch.PaintDoor);
-        } 
+        }
+
+        static void Lesson11()
+        {
+            Lesson11 mylesson11 = new Lesson11();
+            mylesson11.SampleLesson11();
+            mylesson11.UseParams2(10, 3, 36, 45, 120);
+            int[] intArray = { 2, 3, 4, 5, 6 };
+            mylesson11.UseParams(intArray);
+            mylesson11.UseParams2(1, "Happy", false, 34.5F);
+            mylesson11.OptionalParam("Alex");
+            mylesson11.OptionalParam("Alex", 19);
+            int test = 14;
+            mylesson11.RefSample(ref test);
+            //String myTestName, myTestSecondName;
+
+            mylesson11.OutSample("John Doe Riley", out string myTestName, out string myTestSecondName, out string middle);
+
+          // Console.WriteLine(myTestName);
+            Console.WriteLine(myTestName + ", " + myTestSecondName  );
+           Console.WriteLine (middle);
+
+            // Output - myTestName = John & mySecondName = Doe
+
+           // mylesson11.OutSample("John Doe", out string first, out string second);
+            //Console.WriteLine(first);
+          //  Console.WriteLine(second);
+        }
+
     }
+
 }
+
