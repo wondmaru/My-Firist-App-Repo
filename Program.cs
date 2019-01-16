@@ -175,7 +175,7 @@ namespace Classwork
             mylesson11.OutSample("John Doe Riley", out string myTestName, out string myTestSecondName, out string middle);
 
           // Console.WriteLine(myTestName);
-            Console.WriteLine(myTestName + ", " + myTestSecondName  );
+            Console.WriteLine(myTestName + ", " + myTestSecondName);
            Console.WriteLine (middle);
 
             // Output - myTestName = John & mySecondName = Doe
