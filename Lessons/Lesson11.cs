@@ -45,7 +45,6 @@ namespace Lessons
             int myIndex = name.IndexOf(' ');
             firstName = name.Substring(0, myIndex);
             string othername = name.Substring(myIndex + 1);
-
             int myother = name.LastIndexOf(' ');
             middle = othername.Substring(0, myother);
             lastName = name.Substring(myIndex + 1);

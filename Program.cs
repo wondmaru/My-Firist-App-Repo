@@ -53,7 +53,9 @@ namespace Classwork
             //  structSample();
             // QuizClass1();
             // FruitSample();
-            Lesson11();
+            // Lesson11();
+           // ConvertTemp();
+           AbstractDemo();
         }
         static void MyNumbericExamples()
         {
@@ -174,15 +176,62 @@ namespace Classwork
 
             mylesson11.OutSample("John Doe Riley", out string myTestName, out string myTestSecondName, out string middle);
 
-          // Console.WriteLine(myTestName);
+            // Console.WriteLine(myTestName);
             Console.WriteLine(myTestName + ", " + myTestSecondName);
-           Console.WriteLine (middle);
+            Console.WriteLine(middle);
 
             // Output - myTestName = John & mySecondName = Doe
 
-           // mylesson11.OutSample("John Doe", out string first, out string second);
+            // mylesson11.OutSample("John Doe", out string first, out string second);
             //Console.WriteLine(first);
-          //  Console.WriteLine(second);
+            //  Console.WriteLine(second);
+        }
+        public static void ConvertTemp()
+        {
+            Console.WriteLine("Please select the convertor");
+            Console.WriteLine("1. Degree Celsius to Fahrenheit.");
+            Console.WriteLine("2. Degree Fahrenheit to Celsius.");
+            Console.Write(":");
+
+            string selection = Console.ReadLine();
+            double F, C = 0;
+
+            switch (selection)
+            {
+                case "1":
+                    Console.Write("Please enter the temperature in Celsius : ");
+                    F = Utilities.CelsiusToFahrenheit(Console.ReadLine());
+                    Console.WriteLine("Temperature in Fahrenheit: {0:F2}", F);
+                    break;
+
+                case "2":
+                    Console.Write("Please enter the temperature in Fahrenheit : ");
+                    C = Utilities.FahrenheitToCelsius(Console.ReadLine());
+                    Console.WriteLine("Temperature in Celsius: {0:F2}", C);
+                    break;
+
+                default:
+                    Console.WriteLine("Please select a convertor.");
+                    break;
+            }
+
+            // Keep the console window open in debug mode.
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
+        }
+
+        static void AbstractDemo()
+        {
+            TRex trex= new TRex();
+            Triceratops triceratops= new Triceratops();
+            trex.EatFood();
+            trex.Move();
+            triceratops.EatFood();
+            triceratops.Move();
+            trex.Fly();
+            trex.Fight();
+            triceratops.Fight();
+            triceratops.Fly();
         }
 
     }
