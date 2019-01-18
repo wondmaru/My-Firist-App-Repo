@@ -1,7 +1,7 @@
 using System;
 namespace Lessons
 {
-    public abstract class Dinosaur : IPrehistoric
+    public abstract class Dinosaur 
     {
 
         public abstract void Fly();
@@ -16,9 +16,7 @@ namespace Lessons
             Console.WriteLine("The Dinosuar Fights");
         }
         public abstract void SkinType();
-        public  string Teeth(string teeth)
-        {
-            return "Sharp Teeth";
-        }
+        public abstract void Teeth();
+        
     }
 }
