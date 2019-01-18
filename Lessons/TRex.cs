@@ -1,7 +1,7 @@
 using System;
 namespace Lessons
 {
-    public class TRex : Dinosaur ,IPrehistoric
+    public class TRex : Dinosaur 
     {
         public override void EatFood()
         {
@@ -24,9 +24,9 @@ namespace Lessons
         {
             Console.WriteLine("Feathery");
         }
-        public  string Teeth()
+        public override void Teeth()
         {
-            return "Razor Sharp";
+           Console.WriteLine("Razor Sharp") ;
         }
 
     }
