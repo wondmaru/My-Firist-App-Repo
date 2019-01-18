@@ -1,7 +1,7 @@
 using System;
 namespace Lessons
 {
-    public class Triceratops :Dinosaur
+    public class Triceratops :Dinosaur , IPrehistoric
     {
         public override void EatFood()
         {
@@ -10,6 +10,14 @@ namespace Lessons
         public override void Fly()
         {
            Console.WriteLine("The Triceratops flies very high!") ;  
+        }
+        public  override void SkinType()
+        {
+            Console.WriteLine("Feathery like Trex");
+        }
+        public   string Teeth()
+        {
+             return "Supper Razor Sharp" ;
         }
     }
 }

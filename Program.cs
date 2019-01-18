@@ -224,6 +224,7 @@ namespace Classwork
         {
             TRex trex= new TRex();
             Triceratops triceratops= new Triceratops();
+            
             trex.EatFood();
             trex.Move();
             triceratops.EatFood();
@@ -232,6 +233,11 @@ namespace Classwork
             trex.Fight();
             triceratops.Fight();
             triceratops.Fly();
+            trex.Teeth();
+            trex.SkinType();
+            triceratops.Teeth();
+            triceratops.SkinType();
+           
         }
 
     }
