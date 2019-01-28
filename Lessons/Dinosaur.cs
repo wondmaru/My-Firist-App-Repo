@@ -1,9 +1,9 @@
 using System;
 namespace Lessons
 {
-    public abstract class Dinosaur 
+    public abstract class Dinosaur
     {
-
+       public  string Travel = "Walking";
         public abstract void Fly();
         public abstract void EatFood();
         public virtual void Move()
@@ -17,6 +17,6 @@ namespace Lessons
         }
         public abstract void SkinType();
         public abstract void Teeth();
-        
+
     }
 }

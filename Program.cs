@@ -1,6 +1,7 @@
 ﻿using System;
 using Lessons;
 using Quiz;
+using System.Drawing;
 
 /* this Name space represents the file folder 
 where the class is in */
@@ -14,7 +15,7 @@ namespace Classwork
             // Console.WriteLine("Hello World!");
             // House myHouse = new House();
 
-            // myHouse.PaintDoor = "Red";
+            //myHouse.PaintDoor = "Red";
             //myHouse.CloseDoor();
 
             // Console.WriteLine(myHouse.PaintDoor);
@@ -54,8 +55,90 @@ namespace Classwork
             // QuizClass1();
             // FruitSample();
             // Lesson11();
-           // ConvertTemp();
-           AbstractDemo();
+            // ConvertTemp();
+            // AbstractDemo();
+            //DeconstructSample();
+            //FinalizerExaple();
+            // IndexerExample();\
+            // PartialSample();
+            RectangleDemo();
+            // MyhouseDemo();
+            //GenericSample();
+            // CollectionExample();
+        }
+        static void CollectionExample()
+        {
+            ColectionExamples myColecctionExample = new ColectionExamples();
+            myColecctionExample.MyArrayListExample();
+            myColecctionExample.MyListExample();
+        }
+        static void GenericSample()
+        {
+            GenericList<int> myList = new GenericList<int>();
+            myList.Add(10);
+            GenericList<string> mySecodlist = new GenericList<string>();
+            mySecodlist.Add("Happy");
+            GenericList<TRex> myTrexList = new GenericList<TRex>();
+            myTrexList.Add(new TRex());
+
+        }
+        static void MyhouseDemo()
+        {
+            House myhouse = new House();
+            myhouse.Roof = "shingles";
+            House myhouse2 = new House("conceret", "Double Pane");
+            House myhouse3 = new House()
+            {
+                Roof = "Shingles",
+                Window = "double Pane",
+                PaintDoor = "red",
+                Foundation = "Conceret"
+
+            };
+            Console.WriteLine("My windows choiceis {0}", myhouse3.Window);
+
+        }
+        static void RectangleDemo()
+        {
+            Point myPoint = new Point(6, 10);
+            MyRectangle myRectangle = new MyRectangle(40, 10, myPoint, ConsoleColor.Red);
+            myRectangle.Draw();
+            myRectangle.PrintString();
+        }
+
+
+        static void PartialSample()
+        {
+            Pear pear = new Pear("Yellow");
+
+        }
+        static void IndexerExample()
+        {
+            IndexerExample myIndexer = new IndexerExample();
+
+            myIndexer[2] = 250;
+            //Console.Write("Value: ");
+            for (int i = 0; i < myIndexer.Length; i++)
+            {
+                Console.Write("value  {0} = {1}", i, myIndexer[i]);
+            }
+
+        }
+        static void FinalizerExaple()
+        {
+            string first = "John", last = "Carry";
+            FinalizerExample finalizerExample = new FinalizerExample(first, last);
+            Console.WriteLine("Frist Name: {0} \n Last Name: {1}", first, last);
+
+        }
+
+        static void DeconstructSample()
+        {
+            string first = "John", last = "Doe";
+            Lesson13 lesson13 = new Lesson13(first, last);
+            Console.WriteLine("Frist Name: {0} \n Last Name: {1}", first, last);
+            lesson13.Deconstruct(out first, out last);
+            Console.WriteLine("Frist Name: {0} \n Last Name: {1}", first, last);
         }
         static void MyNumbericExamples()
         {
@@ -222,9 +305,9 @@ namespace Classwork
 
         static void AbstractDemo()
         {
-            TRex trex= new TRex();
-            Triceratops triceratops= new Triceratops();
-            
+            TRex trex = new TRex();
+            Triceratops triceratops = new Triceratops();
+
             trex.EatFood();
             trex.Move();
             triceratops.EatFood();
@@ -237,7 +320,7 @@ namespace Classwork
             trex.SkinType();
             triceratops.Teeth();
             triceratops.SkinType();
-           
+
         }
 
     }

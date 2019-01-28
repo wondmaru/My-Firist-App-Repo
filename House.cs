@@ -6,7 +6,7 @@ namespace Classwork
         // The following are fields
         string _foundation;
         // string _roof;
-        string _window;
+        string _window="Double Pane";
         string _door;
 
 
@@ -23,7 +23,7 @@ namespace Classwork
             }
         }
 
-        public string Roof { get; set; }
+        public string Roof { get; set; }= "Composite";
         public string PaintDoor { get; set; }
         public string Window
         {
