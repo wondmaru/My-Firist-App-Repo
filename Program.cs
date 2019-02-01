@@ -61,10 +61,29 @@ namespace Classwork
             //FinalizerExaple();
             // IndexerExample();\
             // PartialSample();
-            RectangleDemo();
+            // RectangleDemo();
             // MyhouseDemo();
             //GenericSample();
             // CollectionExample();
+            //ElMeterconverter();
+            MyTvs();
+        }
+        static void MyTvs()
+        {
+            HDTv mytv = new HDTv();
+            if (mytv.GetInput() == "HD")
+            {
+                Console.Clear();
+                mytv.HD();
+
+            }
+            else
+            {
+                Console.Clear();
+                mytv.FourK();
+
+            }
+            mytv.Display();
         }
         static void CollectionExample()
         {
@@ -268,6 +287,11 @@ namespace Classwork
             // mylesson11.OutSample("John Doe", out string first, out string second);
             //Console.WriteLine(first);
             //  Console.WriteLine(second);
+        }
+        public static void ElMeterconverter()
+        {
+            LabResults myelectricconv = new LabResults();
+            myelectricconv.ElMeterconverter();
         }
         public static void ConvertTemp()
         {
