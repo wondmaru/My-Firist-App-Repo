@@ -3,26 +3,23 @@ namespace Quiz
 {
     public abstract class Television
     {
-        double size, price;
-        int numofports;
-        string mountable; 
-        public string model;
-        public abstract void HD();
-        public abstract void FourK();
-        public virtual string GetInput()
+        protected double size { get; set; }
+        protected double price { get; set; }
+        protected int numofports { get; set; }
+        protected string mountable { get; set; }
+        // public string model;
+        // public abstract void HD();
+        // public abstract void FourK();
+        public abstract void GetInput(double size,double price,int numofports);
+
+        public virtual  string Model()
         {
             Console.WriteLine("Please Enter Model.");
-           model=Console.ReadLine();
-           Console.WriteLine("Please Enter Price.");
-           price=double.Parse(Console.ReadLine());
-           Console.WriteLine("Please Enter Size");
-           size=double.Parse(Console.ReadLine());
-           Console.WriteLine("Please Enter Number of Ports");
-           numofports=int.Parse(Console.ReadLine());
-           Console.WriteLine("Is your Television Mountable? (Y/N)");
-           mountable=Console.ReadLine();
-           return model;
+             string ans=Console.ReadLine();
+           return ans.ToUpper();
+
         }
+        
         public virtual void Display()
         {
             Console.WriteLine("Size: "+ size);

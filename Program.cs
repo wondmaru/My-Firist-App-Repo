@@ -66,24 +66,34 @@ namespace Classwork
             //GenericSample();
             // CollectionExample();
             //ElMeterconverter();
-            MyTvs();
+           // MyTvs();
+            MyLeapYear();
+        }
+        static void MyLeapYear()
+        {
+            QuizLab myleap = new QuizLab();
+            myleap.IsLeapYear();
         }
         static void MyTvs()
         {
             HDTv mytv = new HDTv();
-            if (mytv.GetInput() == "HD")
+            FourKTV mytv1 = new FourKTV();
+            if (mytv.Model() == "HD")
             {
+                mytv.GetInput();
                 Console.Clear();
                 mytv.HD();
+                mytv.Display();
 
             }
             else
             {
+                mytv1.GetInput();
                 Console.Clear();
-                mytv.FourK();
-
+                mytv1.FourKs();
+                mytv1.Display();
             }
-            mytv.Display();
+            
         }
         static void CollectionExample()
         {
