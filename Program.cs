@@ -59,15 +59,21 @@ namespace Classwork
             // AbstractDemo();
             //DeconstructSample();
             //FinalizerExaple();
-            // IndexerExample();\
+            // IndexerExample();
             // PartialSample();
-            // RectangleDemo();
+            //RectangleDemo();
             // MyhouseDemo();
             //GenericSample();
             // CollectionExample();
             //ElMeterconverter();
-           // MyTvs();
-            MyLeapYear();
+            // MyTvs();
+            // MyLeapYear();
+            HumanYar();
+        }
+        static void HumanYar()
+        {
+            DogeYear myDog = new DogeYear();
+            myDog.CalculateDogeYear();
         }
         static void MyLeapYear()
         {
@@ -78,22 +84,22 @@ namespace Classwork
         {
             HDTv mytv = new HDTv();
             FourKTV mytv1 = new FourKTV();
-            if (mytv.Model() == "HD")
-            {
-                mytv.GetInput();
-                Console.Clear();
-                mytv.HD();
-                mytv.Display();
+            /* if (mytv.Model() == "HD")
+             {
+                 mytv.GetInput();
+                 Console.Clear();
+                 mytv.HD();
+                 mytv.Display();
 
-            }
-            else
-            {
-                mytv1.GetInput();
-                Console.Clear();
-                mytv1.FourKs();
-                mytv1.Display();
-            }
-            
+             }
+             else
+             {
+                 mytv1.GetInput();
+                 Console.Clear();
+                 mytv1.FourKs();
+                 mytv1.Display();
+             }*/
+
         }
         static void CollectionExample()
         {
