@@ -2,6 +2,7 @@
 using Lessons;
 using Quiz;
 using System.Drawing;
+using Advanced;
 
 /* this Name space represents the file folder 
 where the class is in */
@@ -9,7 +10,9 @@ namespace Classwork
 {
     // class is a blue print of an oject.
     class Program
+
     {
+        public delegate void TryOn(string type);
         static void Main(string[] args)
         {
             // Console.WriteLine("Hello World!");
@@ -68,7 +71,32 @@ namespace Classwork
             //ElMeterconverter();
             // MyTvs();
             // MyLeapYear();
-            HumanYar();
+            // HumanYar();
+            // DeligateSample();
+            MultiDelegateSample();
+        }
+
+        private static void DeligateSample()
+        {
+            Hat myHat = new Hat("cowboy", 7);
+            TryOn theHat = myHat.TryOnHat;
+            theHat("I tryon a" + myHat.HatType + " hat that was size" + myHat.HatSize);
+            Hat mySecondHat = new Hat();
+        }
+        private static void MultiDelegateSample()
+        {
+            Hat moreHat = new Hat(7);
+            TryOn someHat, niceHat, sadHat;
+            niceHat = moreHat.FindLuckuHat;
+            niceHat("Top");
+            sadHat = moreHat.FindLuckuHat;
+            sadHat("Dunce");
+            someHat = niceHat + sadHat;
+            someHat("Cowboy");
+
+
+
+
         }
         static void HumanYar()
         {

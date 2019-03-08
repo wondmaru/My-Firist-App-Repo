@@ -1,0 +1,11 @@
+F:\MyRepository\My-Firist-App-Repo\obj\Debug\netcoreapp2.1\Classwork.csprojAssemblyReference.cache
+F:\MyRepository\My-Firist-App-Repo\obj\Debug\netcoreapp2.1\Classwork.csproj.CoreCompileInputs.cache
+F:\MyRepository\My-Firist-App-Repo\obj\Debug\netcoreapp2.1\Classwork.AssemblyInfoInputs.cache
+F:\MyRepository\My-Firist-App-Repo\obj\Debug\netcoreapp2.1\Classwork.AssemblyInfo.cs
+F:\MyRepository\My-Firist-App-Repo\bin\Debug\netcoreapp2.1\Classwork.deps.json
+F:\MyRepository\My-Firist-App-Repo\bin\Debug\netcoreapp2.1\Classwork.runtimeconfig.json
+F:\MyRepository\My-Firist-App-Repo\bin\Debug\netcoreapp2.1\Classwork.runtimeconfig.dev.json
+F:\MyRepository\My-Firist-App-Repo\bin\Debug\netcoreapp2.1\Classwork.dll
+F:\MyRepository\My-Firist-App-Repo\bin\Debug\netcoreapp2.1\Classwork.pdb
+F:\MyRepository\My-Firist-App-Repo\obj\Debug\netcoreapp2.1\Classwork.dll
+F:\MyRepository\My-Firist-App-Repo\obj\Debug\netcoreapp2.1\Classwork.pdb

@@ -1,0 +1,4 @@
+F:\MyRepository\My-Firist-App-Repo\obj\BNB\Debug\netcoreapp2.1\Classwork.csprojAssemblyReference.cache
+F:\MyRepository\My-Firist-App-Repo\obj\BNB\Debug\netcoreapp2.1\Classwork.csproj.CoreCompileInputs.cache
+F:\MyRepository\My-Firist-App-Repo\obj\BNB\Debug\netcoreapp2.1\Classwork.AssemblyInfoInputs.cache
+F:\MyRepository\My-Firist-App-Repo\obj\BNB\Debug\netcoreapp2.1\Classwork.AssemblyInfo.cs
