@@ -71,9 +71,35 @@ namespace Classwork
             //ElMeterconverter();
             // MyTvs();
             // MyLeapYear();
-            // HumanYar();
+            //HumanYar();
             // DeligateSample();
-            MultiDelegateSample();
+            // MultiDelegateSample();
+            //  EventSample();
+            //LambdaSample();
+            // ExceptionSample();
+            linqDemo();
+        }
+        private static void linqDemo()
+        {
+            LinqExamples linqExamples = new LinqExamples();
+            linqExamples.SomeLinq();
+        }
+        private static void ExceptionSample()
+        {
+            ExceptionExamples myEx = new ExceptionExamples();
+            myEx.Myexception();
+            myEx.MyarrayException();
+        }
+        private static void LambdaSample()
+        {
+            LambdaExample myLambda = new LambdaExample();
+            Console.WriteLine(myLambda.myLambdaOne(5));
+        }
+        private static void EventSample()
+        {
+            Coats myCoat = new Coats();
+            string result = myCoat.MyResult;
+            Console.WriteLine(result);
         }
 
         private static void DeligateSample()
